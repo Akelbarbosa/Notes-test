@@ -15,7 +15,19 @@
 		C4BF2E7C2BB0C966003CFC8E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E7B2BB0C966003CFC8E /* ViewModel.swift */; };
 		C4BF2E7E2BB0CD95003CFC8E /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E7D2BB0CD95003CFC8E /* CreateNoteView.swift */; };
 		C4BF2E802BB0D7B2003CFC8E /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E7F2BB0D7B2003CFC8E /* UpdateNoteView.swift */; };
+		C4BF2E892BB0DEBA003CFC8E /* NoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E882BB0DEBA003CFC8E /* NoteTest.swift */; };
+		C4BF2E902BB0E41C003CFC8E /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E8F2BB0E41C003CFC8E /* ViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4BF2E8A2BB0DEBA003CFC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4BF2E5D2BB0C804003CFC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4BF2E642BB0C804003CFC8E;
+			remoteInfo = "Notes Test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C4BF2E652BB0C804003CFC8E /* Notes Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +39,20 @@
 		C4BF2E7B2BB0C966003CFC8E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C4BF2E7D2BB0CD95003CFC8E /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		C4BF2E7F2BB0D7B2003CFC8E /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
+		C4BF2E862BB0DEBA003CFC8E /* Notes TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BF2E882BB0DEBA003CFC8E /* NoteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTest.swift; sourceTree = "<group>"; };
+		C4BF2E8F2BB0E41C003CFC8E /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4BF2E622BB0C804003CFC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BF2E832BB0DEBA003CFC8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BF2E672BB0C804003CFC8E /* Notes Test */,
+				C4BF2E872BB0DEBA003CFC8E /* Notes TestTests */,
 				C4BF2E662BB0C804003CFC8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BF2E652BB0C804003CFC8E /* Notes Test.app */,
+				C4BF2E862BB0DEBA003CFC8E /* Notes TestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +119,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C4BF2E872BB0DEBA003CFC8E /* Notes TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4BF2E882BB0DEBA003CFC8E /* NoteTest.swift */,
+				C4BF2E8F2BB0E41C003CFC8E /* ViewModelTest.swift */,
+			);
+			path = "Notes TestTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +148,24 @@
 			productReference = C4BF2E652BB0C804003CFC8E /* Notes Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C4BF2E852BB0DEBA003CFC8E /* Notes TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4BF2E8C2BB0DEBA003CFC8E /* Build configuration list for PBXNativeTarget "Notes TestTests" */;
+			buildPhases = (
+				C4BF2E822BB0DEBA003CFC8E /* Sources */,
+				C4BF2E832BB0DEBA003CFC8E /* Frameworks */,
+				C4BF2E842BB0DEBA003CFC8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4BF2E8B2BB0DEBA003CFC8E /* PBXTargetDependency */,
+			);
+			name = "Notes TestTests";
+			productName = "Notes TestTests";
+			productReference = C4BF2E862BB0DEBA003CFC8E /* Notes TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +178,10 @@
 				TargetAttributes = {
 					C4BF2E642BB0C804003CFC8E = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					C4BF2E852BB0DEBA003CFC8E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C4BF2E642BB0C804003CFC8E;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				C4BF2E642BB0C804003CFC8E /* Notes Test */,
+				C4BF2E852BB0DEBA003CFC8E /* Notes TestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +211,13 @@
 			files = (
 				C4BF2E722BB0C806003CFC8E /* Preview Assets.xcassets in Resources */,
 				C4BF2E6F2BB0C806003CFC8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BF2E842BB0DEBA003CFC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +237,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4BF2E822BB0DEBA003CFC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BF2E902BB0E41C003CFC8E /* ViewModelTest.swift in Sources */,
+				C4BF2E892BB0DEBA003CFC8E /* NoteTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4BF2E8B2BB0DEBA003CFC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4BF2E642BB0C804003CFC8E /* Notes Test */;
+			targetProxy = C4BF2E8A2BB0DEBA003CFC8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C4BF2E732BB0C806003CFC8E /* Debug */ = {
@@ -354,6 +434,42 @@
 			};
 			name = Release;
 		};
+		C4BF2E8D2BB0DEBA003CFC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3AXTCLPKH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akelbarbosa.Notes-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notes Test";
+			};
+			name = Debug;
+		};
+		C4BF2E8E2BB0DEBA003CFC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3AXTCLPKH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akelbarbosa.Notes-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notes Test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +487,15 @@
 			buildConfigurations = (
 				C4BF2E762BB0C806003CFC8E /* Debug */,
 				C4BF2E772BB0C806003CFC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4BF2E8C2BB0DEBA003CFC8E /* Build configuration list for PBXNativeTarget "Notes TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4BF2E8D2BB0DEBA003CFC8E /* Debug */,
+				C4BF2E8E2BB0DEBA003CFC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
