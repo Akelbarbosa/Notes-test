@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41272862BB61B7E00B21F6B /* NotesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41272852BB61B7E00B21F6B /* NotesDatabase.swift */; };
+		C41272882BB620E000B21F6B /* CreateNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41272872BB620E000B21F6B /* CreateNoteUseCase.swift */; };
+		C412728A2BB621C100B21F6B /* FetchAllNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41272892BB621C100B21F6B /* FetchAllNotesUseCase.swift */; };
+		C412728C2BB62A0D00B21F6B /* ViewModelIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412728B2BB62A0D00B21F6B /* ViewModelIntegrationTest.swift */; };
+		C412728E2BB7347D00B21F6B /* UpdateNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412728D2BB7347D00B21F6B /* UpdateNoteUseCase.swift */; };
+		C41272902BB7348F00B21F6B /* DeleteNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412728F2BB7348F00B21F6B /* DeleteNoteUseCase.swift */; };
+		C41272942BB8ACA600B21F6B /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41272932BB8ACA500B21F6B /* Mocks.swift */; };
 		C4BF2E692BB0C804003CFC8E /* Notes_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E682BB0C804003CFC8E /* Notes_TestApp.swift */; };
 		C4BF2E6B2BB0C804003CFC8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF2E6A2BB0C804003CFC8E /* ContentView.swift */; };
 		C4BF2E6F2BB0C806003CFC8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BF2E6E2BB0C806003CFC8E /* Assets.xcassets */; };
@@ -30,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41272852BB61B7E00B21F6B /* NotesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDatabase.swift; sourceTree = "<group>"; };
+		C41272872BB620E000B21F6B /* CreateNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCase.swift; sourceTree = "<group>"; };
+		C41272892BB621C100B21F6B /* FetchAllNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllNotesUseCase.swift; sourceTree = "<group>"; };
+		C412728B2BB62A0D00B21F6B /* ViewModelIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelIntegrationTest.swift; sourceTree = "<group>"; };
+		C412728D2BB7347D00B21F6B /* UpdateNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteUseCase.swift; sourceTree = "<group>"; };
+		C412728F2BB7348F00B21F6B /* DeleteNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteUseCase.swift; sourceTree = "<group>"; };
+		C41272932BB8ACA500B21F6B /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		C4BF2E652BB0C804003CFC8E /* Notes Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BF2E682BB0C804003CFC8E /* Notes_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_TestApp.swift; sourceTree = "<group>"; };
 		C4BF2E6A2BB0C804003CFC8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +76,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41272912BB73B3D00B21F6B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C41272892BB621C100B21F6B /* FetchAllNotesUseCase.swift */,
+				C41272872BB620E000B21F6B /* CreateNoteUseCase.swift */,
+				C412728D2BB7347D00B21F6B /* UpdateNoteUseCase.swift */,
+				C41272852BB61B7E00B21F6B /* NotesDatabase.swift */,
+				C412728F2BB7348F00B21F6B /* DeleteNoteUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C41272922BB8AC8C00B21F6B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C41272932BB8ACA500B21F6B /* Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		C4BF2E5C2BB0C804003CFC8E = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +124,7 @@
 				C4BF2E6E2BB0C806003CFC8E /* Assets.xcassets */,
 				C4BF2E702BB0C806003CFC8E /* Preview Content */,
 				C4BF2E812BB0DB8E003CFC8E /* Views */,
+				C41272912BB73B3D00B21F6B /* UseCases */,
 			);
 			path = "Notes Test";
 			sourceTree = "<group>";
@@ -122,8 +157,10 @@
 		C4BF2E872BB0DEBA003CFC8E /* Notes TestTests */ = {
 			isa = PBXGroup;
 			children = (
+				C41272922BB8AC8C00B21F6B /* Mocks */,
 				C4BF2E882BB0DEBA003CFC8E /* NoteTest.swift */,
 				C4BF2E8F2BB0E41C003CFC8E /* ViewModelTest.swift */,
+				C412728B2BB62A0D00B21F6B /* ViewModelIntegrationTest.swift */,
 			);
 			path = "Notes TestTests";
 			sourceTree = "<group>";
@@ -228,10 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41272902BB7348F00B21F6B /* DeleteNoteUseCase.swift in Sources */,
 				C4BF2E7C2BB0C966003CFC8E /* ViewModel.swift in Sources */,
+				C41272862BB61B7E00B21F6B /* NotesDatabase.swift in Sources */,
+				C412728E2BB7347D00B21F6B /* UpdateNoteUseCase.swift in Sources */,
 				C4BF2E6B2BB0C804003CFC8E /* ContentView.swift in Sources */,
 				C4BF2E692BB0C804003CFC8E /* Notes_TestApp.swift in Sources */,
 				C4BF2E802BB0D7B2003CFC8E /* UpdateNoteView.swift in Sources */,
+				C41272882BB620E000B21F6B /* CreateNoteUseCase.swift in Sources */,
+				C412728A2BB621C100B21F6B /* FetchAllNotesUseCase.swift in Sources */,
 				C4BF2E7E2BB0CD95003CFC8E /* CreateNoteView.swift in Sources */,
 				C4BF2E792BB0C88A003CFC8E /* Note.swift in Sources */,
 			);
@@ -243,6 +285,8 @@
 			files = (
 				C4BF2E902BB0E41C003CFC8E /* ViewModelTest.swift in Sources */,
 				C4BF2E892BB0DEBA003CFC8E /* NoteTest.swift in Sources */,
+				C412728C2BB62A0D00B21F6B /* ViewModelIntegrationTest.swift in Sources */,
+				C41272942BB8ACA600B21F6B /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
